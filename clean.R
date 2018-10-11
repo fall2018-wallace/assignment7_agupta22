@@ -3,6 +3,7 @@ uncleaned_data <- raw_data
 
 clean <- function(states)
 {
+    last_row <- nrow(states)
     
 }
 
