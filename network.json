@@ -48,8 +48,11 @@
             "desc": "",
             "name": "Merge.R",
             "task_status": "in progress"
+        },
+        {
+            "name": "area_map.png"
         }
     ],
-    "updated_at": "2018-10-18 04:29:32",
+    "updated_at": "2018-10-18 10:42:19",
     "url": "https://github.com/fall2018-wallace/assignment7_agupta22"
 }
