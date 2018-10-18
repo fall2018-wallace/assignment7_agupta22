@@ -1,4 +1,6 @@
 
+library(maps)
+library(RColorBrewer)
 #1)	Read in the census dataset and the USArrests and merge them 
 State <- State_data
 arrests <- USArrests            
