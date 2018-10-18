@@ -17,16 +17,6 @@
         {
             "ports": [
                 {
-                    "output": "clean_data",
-                    "type": "csv"
-                }
-            ],
-            "source": "clean.R",
-            "target": "data.csv"
-        },
-        {
-            "ports": [
-                {
                     "input": "State_data",
                     "output": "Final_data",
                     "type": "r_obj"
@@ -34,6 +24,11 @@
             ],
             "source": "clean.R",
             "target": "Merge.R"
+        },
+        {
+            "ports": [],
+            "source": "clean.R",
+            "target": "data.csv"
         }
     ],
     "nodes": [
@@ -49,10 +44,12 @@
             "name": "data.csv"
         },
         {
+            "assigned_to": "agupta22",
             "desc": "",
-            "name": "Merge.R"
+            "name": "Merge.R",
+            "task_status": "in progress"
         }
     ],
-    "updated_at": "2018-10-18 04:24:37",
+    "updated_at": "2018-10-18 04:29:32",
     "url": "https://github.com/fall2018-wallace/assignment7_agupta22"
 }
