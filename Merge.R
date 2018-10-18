@@ -32,3 +32,15 @@ area_map
 
 area_map <- area_map + expand_limits(x=US$long, y=US$lat)       #stating the map locations borders
 area_map
+
+#Step C: Create a color shaded map of the U.S. based on the Murder rate for each state 
+#4)	Repeat step B, but color code the map based on the murder rate of each state.
+
+murder_map <- ggplot (dfmerge , aes(map_id = statename))
+
+
+murder_map <- murder_map + geom_map (map=US, aes(fill=dfmerge$Murder))             #mapping according to murder in each state
+
+
+murder_map <- murder_map + expand_limits(x=US$long, y=US$lat)
+murder_map
