@@ -64,7 +64,7 @@ library(ggmap)
 
 latlon <- geocode(source = "dsk","nyc, new york, ny")                                             #Defining the geom_code.
 latlon
-mapMurder <- mapMurder + xlim(latlon$lon-10,latlon$lon+10) + ylim(latlon$lat-10, latlon$lat+10)    # Defining the geospatial for murder
+mapMurder <- murder_map + xlim(latlon$lon-10,latlon$lon+10) + ylim(latlon$lat-10, latlon$lat+10)    # Defining the geospatial for murder
 mapMurder <- mapMurder + coord_map()                                                               # Defining the coordinates
 mapMurder
 
