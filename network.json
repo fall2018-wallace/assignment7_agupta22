@@ -25,7 +25,13 @@
             "target": "data.csv"
         },
         {
-            "ports": [],
+            "ports": [
+                {
+                    "input": "State_data",
+                    "output": "cleaned_data",
+                    "type": "r_obj"
+                }
+            ],
             "source": "clean.R",
             "target": "Merge.R"
         }
@@ -47,6 +53,6 @@
             "name": "Merge.R"
         }
     ],
-    "updated_at": "2018-10-18 04:22:18",
+    "updated_at": "2018-10-18 04:23:01",
     "url": "https://github.com/fall2018-wallace/assignment7_agupta22"
 }
