@@ -30,12 +30,18 @@
             "name": "scprc_est_2017_18_pop_res.csv"
         },
         {
-            "name": "clean.R"
+            "assigned_to": "agupta22",
+            "name": "clean.R",
+            "task_status": "in progress"
         },
         {
             "name": "data.csv"
+        },
+        {
+            "desc": "",
+            "name": "Merge.R"
         }
     ],
-    "updated_at": "2018-10-11 17:19:29",
+    "updated_at": "2018-10-18 04:22:07",
     "url": "https://github.com/fall2018-wallace/assignment7_agupta22"
 }
