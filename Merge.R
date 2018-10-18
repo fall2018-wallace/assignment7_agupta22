@@ -26,7 +26,6 @@ dfmerge$statename
 #3)	Create a color coded map, based on the area of the state 
 library(ggplot2)
 US <- map_data("state")
-US
 area_map <- ggplot (dfmerge , aes(map_id = statename))
 
 
@@ -62,7 +61,7 @@ library(ggmap)
 nyc_lat_long <- geocode("new york city, ny", source = "dsk")    
 nyc_lat_long
 nyc_lat_long$lon
-north_east_map <- ggplot(dfmerge, aes(map_id=statename)) + geom_map(map=US , aes(fill=Murder)) + expand_limits(x=dfmerge$state_lat , y=dfmerge$state_lon) + coord_map() + ggtitle ("Northeast of US") +geom_point (aes(x=dfmerge$state_lat, y=dfmerge$state_lon, size=dfmerge$POPESTIMATE2017), color="red")     
+north_east_map <- ggplot(dfmerge, aes(map_id=statename)) + geom_map(map=US , aes(fill=dfmerge$Murder)) + expand_limits(x=dfmerge$state_lat , y=dfmerge$state_lon) + coord_map() + ggtitle ("Northeast of US") +geom_point (aes(x=dfmerge$state_lat, y=dfmerge$state_lon, size=dfmerge$POPESTIMATE2017), color="red")     
 #north_east_map <- north_east_map + xlim(nyc_lat_long$lon-10, nyc_lat_long$lon+10) + ylim (nyc_lat_long$lat-10, nyc_lat_long$lat+10)      
 
 
