@@ -16,4 +16,5 @@ dfmerge$state_lat <- state_latitude
 dfmerge$state_lon <- state_longitude
 dfmerge$state_area <- statearea
 
-dfmerge$NAME <- tolower(dfmerge$NAME)               
+dfmerge$NAME <- tolower(dfmerge$NAME) 
+dfmerge$NAME
