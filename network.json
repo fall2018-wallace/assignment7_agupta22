@@ -74,8 +74,11 @@
         },
         {
             "name": "murder_map.png"
+        },
+        {
+            "name": "population_map.png"
         }
     ],
-    "updated_at": "2018-10-18 10:49:07",
+    "updated_at": "2018-10-18 10:51:46",
     "url": "https://github.com/fall2018-wallace/assignment7_agupta22"
 }
