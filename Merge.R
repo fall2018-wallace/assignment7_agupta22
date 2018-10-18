@@ -62,9 +62,9 @@ population_map
 #6)	Repeat step C, but only show the states in the north east
 #Hint: get the lat and lon of new york city
 #Hint: set the xlim and ylim to NYC +/- 10
-library(ggmap)
-nyc_lat_long <- geocode("new york city, ny", source = "dsk")    
-nyc_lat_long
+#library(ggmap)
+#nyc_lat_long <- geocode("new york city, ny", source = "dsk")    
+#nyc_lat_long
 #north_east_map <- ggplot(dfmerge, aes(map_id=statename)) + geom_map(map=US , aes(fill=Murder)) + expand_limits(x=dfmerge$state_lat , y=dfmerge$state_lon) + coord_map() + ggtitle ("Northeast of US") +geom_point (aes(x=dfmerge$state_lat, y=dfmerge$state_lon, size=dfmerge$POPESTIMATE2017), color="red")     
 #north_east_map <- north_east_map + xlim(nyc_lat_long$lon-10, nyc_lat_long$lon+10) + ylim (nyc_lat_long$lat-10, nyc_lat_long$lat+10)      
 
