@@ -26,6 +26,7 @@ dfmerge$statename
 #3)	Create a color coded map, based on the area of the state 
 library(ggplot2)
 US <- map_data("state")
+US
 area_map <- ggplot (dfmerge , aes(map_id = statename))
 
 
