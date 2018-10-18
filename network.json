@@ -87,8 +87,11 @@
         },
         {
             "name": "population_map.png"
+        },
+        {
+            "name": "north_east_map.png"
         }
     ],
-    "updated_at": "2018-10-18 10:52:20",
+    "updated_at": "2018-10-18 10:57:04",
     "url": "https://github.com/fall2018-wallace/assignment7_agupta22"
 }
