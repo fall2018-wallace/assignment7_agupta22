@@ -1,0 +1,107 @@
+{
+    "collaborators": [
+        "agupta22"
+    ],
+    "created_at": "2018-10-11 17:18:03",
+    "edges": [
+        {
+            "ports": [
+                {
+                    "input": "raw_data",
+                    "type": "csv"
+                }
+            ],
+            "source": "scprc_est_2017_18_pop_res.csv",
+            "target": "clean.R"
+        },
+        {
+            "ports": [
+                {
+                    "input": "State_data",
+                    "output": "Final_data",
+                    "type": "r_obj"
+                }
+            ],
+            "source": "clean.R",
+            "target": "Merge.R"
+        },
+        {
+            "ports": [],
+            "source": "clean.R",
+            "target": "data.csv"
+        },
+        {
+            "ports": [
+                {
+                    "output": "area_map",
+                    "type": "png"
+                }
+            ],
+            "source": "Merge.R",
+            "target": "area_map.png"
+        },
+        {
+            "ports": [
+                {
+                    "output": "murder_map",
+                    "type": "png"
+                }
+            ],
+            "source": "Merge.R",
+            "target": "murder_map.png"
+        },
+        {
+            "ports": [
+                {
+                    "output": "population_map",
+                    "type": "png"
+                }
+            ],
+            "source": "Merge.R",
+            "target": "population_map.png"
+        },
+        {
+            "ports": [
+                {
+                    "output": "north_east_map",
+                    "type": "png"
+                }
+            ],
+            "source": "Merge.R",
+            "target": "north_east_map.png"
+        }
+    ],
+    "nodes": [
+        {
+            "name": "scprc_est_2017_18_pop_res.csv"
+        },
+        {
+            "assigned_to": "agupta22",
+            "name": "clean.R",
+            "task_status": "in progress"
+        },
+        {
+            "name": "data.csv"
+        },
+        {
+            "assigned_to": "agupta22",
+            "desc": "",
+            "name": "Merge.R",
+            "task_status": "in progress"
+        },
+        {
+            "name": "area_map.png"
+        },
+        {
+            "name": "murder_map.png"
+        },
+        {
+            "name": "population_map.png"
+        },
+        {
+            "name": "north_east_map.png"
+        }
+    ],
+    "updated_at": "2018-10-18 10:57:26",
+    "url": "https://github.com/fall2018-wallace/assignment7_agupta22"
+}
