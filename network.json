@@ -28,7 +28,7 @@
             "ports": [
                 {
                     "input": "State_data",
-                    "output": "cleaned_data",
+                    "output": "Final_data",
                     "type": "r_obj"
                 }
             ],
@@ -53,6 +53,6 @@
             "name": "Merge.R"
         }
     ],
-    "updated_at": "2018-10-18 04:23:01",
+    "updated_at": "2018-10-18 04:24:37",
     "url": "https://github.com/fall2018-wallace/assignment7_agupta22"
 }
