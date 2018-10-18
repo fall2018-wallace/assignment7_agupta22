@@ -58,8 +58,13 @@ population_map <- murder_map + coord_map()
 #Hint: get the lat and lon of new york city
 #Hint: set the xlim and ylim to NYC +/- 10
 library(ggmap)
-nyc_lat_long <- geocode("new york city, ny", source = "dsk")    
-north_east_map <- ggplot(dfmerge, aes(map_id=statename)) + geom_map(map=US , aes(fill=dfmerge$Murder)) + expand_limits(x=US$lat , y=US$long) + coord_map() + ggtitle ("Northeast of US") + geom_point(aes(x=dfmerge$state_lat, y=dfmerge$state_lon, size=dfmerge$POPESTIMATE2017), color="red")     
+#nyc_lat_long <- geocode("new york city, ny", source = "dsk")    
+#north_east_map <- ggplot(dfmerge, aes(map_id=statename)) + geom_map(map=US , aes(fill=dfmerge$Murder)) + expand_limits(x=US$lat , y=US$long) + coord_map() + ggtitle ("Northeast of US") + geom_point(aes(x=dfmerge$state_lat, y=dfmerge$state_lon, size=dfmerge$POPESTIMATE2017), color="red")     
 #north_east_map <- north_east_map + xlim(nyc_lat_long$lon-10, nyc_lat_long$lon+10) + ylim (nyc_lat_long$lat-10, nyc_lat_long$lat+10)      
 
+latlon <- geocode(source = "dsk","nyc, new york, ny")                                             #Defining the geom_code.
+latlon
+mapMurder <- mapMurder + xlim(latlon$lon-10,latlon$lon+10) + ylim(latlon$lat-10, latlon$lat+10)    # Defining the geospatial for murder
+mapMurder <- mapMurder + coord_map()                                                               # Defining the coordinates
+mapMurder
 
