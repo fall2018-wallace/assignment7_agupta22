@@ -15,3 +15,4 @@ clean <- function(states)
 }
 
 Final_data <- clean(uncleaned_data)
+Final_data
