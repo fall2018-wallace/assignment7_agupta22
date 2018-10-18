@@ -17,8 +17,8 @@ dfmerge$state_lon <- state_longitude
 dfmerge$state_area <- statearea
 
 dfmerge
-#dfmerge$NAME <- tolower(dfmerge$NAME) 
-#dfmerge$NAME
+dfmerge$statename <- tolower(dfmerge$statename) 
+dfmerge$statename
 
 #Step B: Generate a color coded map
 #3)	Create a color coded map, based on the area of the state 
