@@ -59,6 +59,16 @@
             ],
             "source": "Merge.R",
             "target": "population_map.png"
+        },
+        {
+            "ports": [
+                {
+                    "output": "north_east_map",
+                    "type": "png"
+                }
+            ],
+            "source": "Merge.R",
+            "target": "north_east_map.png"
         }
     ],
     "nodes": [
@@ -92,6 +102,6 @@
             "name": "north_east_map.png"
         }
     ],
-    "updated_at": "2018-10-18 10:57:04",
+    "updated_at": "2018-10-18 10:57:26",
     "url": "https://github.com/fall2018-wallace/assignment7_agupta22"
 }
