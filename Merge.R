@@ -53,8 +53,8 @@ murder_map <- murder_map + expand_limits(x=US$long, y=US$lat)
 #population_map <- murder_map + coord_map()
 population_map<-ggplot(dfmerge , aes(map_id=statename))
 population_map<- population_map + geom_map(map = US,aes(fill=dfmerge$population))
-population_map<- population_map + expand_limits(x= dfmerge$x,y=dfmerge$y) 
-population_map<- population_map + geom_point(data=dfmerge, aes(x=dfmerge$x,y=dfmerge$y,size=dfmerge$population), color ="Red")
+population_map<- population_map + expand_limits(x= dfmerge$state_lat,y=dfmerge$state_lon) 
+population_map<- population_map + geom_point(data=dfmerge, aes(x=dfmerge$state_lat,y=dfmerge$state_lon,size=dfmerge$population), color ="Red")
 population_map<- population_map + coord_map() + ggtitle("Map of USA (Population)")
 population_map
 
