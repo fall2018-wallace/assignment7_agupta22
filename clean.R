@@ -1,6 +1,6 @@
 
 uncleaned_data <- raw_data
-uncleaned_data
+
 
 clean <- function(states)
 {
