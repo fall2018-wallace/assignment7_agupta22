@@ -10,7 +10,7 @@ clean <- function(states)
     states <- states[ -c(1,last_row), -c(1:4)]
     colnames(states) <- c("statename","population","popOver18","percentOver18")
     
-    return states;
+    return(states)
     
 }
 
