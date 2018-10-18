@@ -29,6 +29,16 @@
             "ports": [],
             "source": "clean.R",
             "target": "data.csv"
+        },
+        {
+            "ports": [
+                {
+                    "output": "area_map",
+                    "type": "png"
+                }
+            ],
+            "source": "Merge.R",
+            "target": "area_map.png"
         }
     ],
     "nodes": [
@@ -53,6 +63,6 @@
             "name": "area_map.png"
         }
     ],
-    "updated_at": "2018-10-18 10:42:19",
+    "updated_at": "2018-10-18 10:42:47",
     "url": "https://github.com/fall2018-wallace/assignment7_agupta22"
 }
