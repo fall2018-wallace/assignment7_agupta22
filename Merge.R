@@ -1,5 +1,6 @@
 
 State <- State_data
 arrests <- USArrests            
-dfmerge <- cbind(newStates, arrests)    
+arrest
+dfmerge <- cbind(State, arrests)    
 dfmerge
