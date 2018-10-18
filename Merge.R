@@ -50,6 +50,7 @@ murder_map <- murder_map + expand_limits(x=US$long, y=US$lat)
 #5)	 Show the population as a circle per state (the larger the population, the larger the circle), using the location defined by the center of each state
 
 population_map <- ggplot (dfmerge , aes(map_id = statename))
+population_map <- population_map + geom_map(map=US, aes(fill=dfmerge$population))
 population_map <- murder_map + geom_point (aes(x=dfmerge$state_lat, y=dfmerge$state_lon, size=dfmerge$population), color="red")      
 population_map <- murder_map + coord_map()
 
