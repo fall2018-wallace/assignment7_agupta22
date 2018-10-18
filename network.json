@@ -49,6 +49,16 @@
             ],
             "source": "Merge.R",
             "target": "murder_map.png"
+        },
+        {
+            "ports": [
+                {
+                    "output": "population_map",
+                    "type": "png"
+                }
+            ],
+            "source": "Merge.R",
+            "target": "population_map.png"
         }
     ],
     "nodes": [
@@ -79,6 +89,6 @@
             "name": "population_map.png"
         }
     ],
-    "updated_at": "2018-10-18 10:51:46",
+    "updated_at": "2018-10-18 10:52:20",
     "url": "https://github.com/fall2018-wallace/assignment7_agupta22"
 }
