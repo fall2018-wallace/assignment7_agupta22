@@ -61,8 +61,11 @@
         },
         {
             "name": "area_map.png"
+        },
+        {
+            "name": "murder_map.png"
         }
     ],
-    "updated_at": "2018-10-18 10:42:47",
+    "updated_at": "2018-10-18 10:48:56",
     "url": "https://github.com/fall2018-wallace/assignment7_agupta22"
 }
