@@ -30,5 +30,5 @@ area_map <- ggplot (dfmerge , aes(map_id = statename))
 area_map <- area_map + geom_map (map=US, aes(fill=dfmerge$state_area))     #mapping according to the area of each state
 area_map
 
-area_map <- area_map + expand_limits(x=US$long, y=us$lat)       #stating the map locations borders
+area_map <- area_map + expand_limits(x=US$long, y=US$lat)       #stating the map locations borders
 area_map
