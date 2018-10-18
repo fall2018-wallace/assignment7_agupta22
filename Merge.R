@@ -49,9 +49,14 @@ murder_map <- murder_map + expand_limits(x=US$long, y=US$lat)
 
 #5)	 Show the population as a circle per state (the larger the population, the larger the circle), using the location defined by the center of each state
 
-population_map <- murder_map + geom_point (aes(x=dfmerge$state_lat, y=dfmerge$state_lon, size=dfmerge$POPESTIMATE2017), color="red")      
-population_map <- murder_map + coord_map()
-
+#population_map <- murder_map + geom_point (aes(x=dfmerge$state_lat, y=dfmerge$state_lon, size=dfmerge$POPESTIMATE2017), color="red")      
+#population_map <- murder_map + coord_map()
+population_map<-ggplot(dfmerge , aes(map_id=statename))
+population_map<- population_map + geom_map(map = US,aes(fill=dfmerge$population))
+population_map<- population_map + expand_limits(x= dfmerge$state_lat,y=dfmerge$state_lon) 
+population_map<- population_map + geom_point(data=dfmerge, aes(x=dfmerge$state_lat,y=dfmerge$state_lon,size=dfmerge$POPESTIMATE2017), color ="Red")
+population_map<- population_map + coord_map() + ggtitle("Map of USA (Population)")
+population_map
 
 #Step D: Zoom the map
 #6)	Repeat step C, but only show the states in the north east
